@@ -591,7 +591,7 @@ color:#381908;
   letter-spacing: 2px;
   margin-top: 5px;
   padding-top: 15px;     /*  上方內距   */
-  padding-bottom: 1ㄢpx;  /*  下方內距   */
+  padding-bottom: 0px;  /*  下方內距   */
   padding-left: 0px;    /*  左方內距   */
   padding-right: 0px;   /*  右方內距   */
 }
@@ -637,4 +637,32 @@ color:#381908;
   .first_hr1 {
     display: none;
   }
+}
+.footer_end {
+  background-color: rgb(68, 183, 160)!important;
+  height: 178px!important;
+  width: 100%!important;
+  display: flex!important;
+  justify-content: space-between!important;
+  align-items: center!important;
+  text-align: right!important;
+  padding: 0 46px!important;
+  position: relative!important; /* 讓子元素絕對定位 */
+  justify-content: flex-end; /* 文字從右開始排列 */
+}
+.logo_internet2{
+  display: flex; /* 使用 Flexbox 布局 */
+  gap: 20px; /* 設置項目之間的間距 */
+  justify-content: right; /* 向右對齊 */
+  align-items: right; /* 向右對齊 */
+}
+.contect_gmail{
+  padding-top: 10px;     /*  上方內距   */
+  padding-bottom: 0px;  /*  下方內距   */
+  color: #fff;
+  font-family: 'Noto Sans TC', sans-serif; /* 使用台北正黑體 */
+  font-weight: normal; /* 設定字體為正常字重 */
+  letter-spacing: 2px; /* 字距 */
+  line-height: 1.5;    /* 行距 */
+  margin-top: 5px;     /* 元素上方的外距 */
 }
