@@ -639,30 +639,38 @@ color:#381908;
   }
 }
 .footer_end {
-  background-color: rgb(68, 183, 160)!important;
-  height: 178px!important;
-  width: 100%!important;
-  display: flex!important;
-  justify-content: space-between!important;
-  align-items: center!important;
-  text-align: right!important;
-  padding: 0 46px!important;
-  position: relative!important; /* 讓子元素絕對定位 */
-  justify-content: flex-end; /* 文字從右開始排列 */
+  background-color: rgb(68, 183, 160) !important; /* 背景色 */
+  height: 178px !important; /* 高度 */
+  width: 100% !important; /* 寬度 */
+  display: flex !important; /* 使用 Flexbox 布局 */
+  justify-content: space-between !important; /* 子元素間距均分 */
+  align-items: center !important; /* 垂直置中 */
+  padding: 0 46px !important; /* 左右內距 */
+  position: relative !important; /* 讓子元素絕對定位可用 */
 }
-.logo_internet2{
-  display: flex; /* 使用 Flexbox 布局 */
-  gap: 20px; /* 設置項目之間的間距 */
-  justify-content: right; /* 向右對齊 */
-  align-items: right; /* 向右對齊 */
+
+.logo {
+  flex: 1; /* 分配空間，保持靈活 */
 }
-.contect_gmail{
-  padding-top: 10px;     /*  上方內距   */
-  padding-bottom: 0px;  /*  下方內距   */
-  color: #fff;
+
+.logo_internet {
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: flex-end; /* 向右對齊 */
+  text-align: right; /* 文字對齊右側 */
+}
+
+.logo_internet2 {
+  display: flex; /* 使用 Flexbox 水平排列 */
+  gap: 20px; /* 圖標之間的間距 */
+}
+
+.contect_gmail {
+  padding-top: 10px; /* 上方內距 */
+  color: #fff; /* 字體顏色 */
   font-family: 'Noto Sans TC', sans-serif; /* 使用台北正黑體 */
   font-weight: normal; /* 設定字體為正常字重 */
   letter-spacing: 2px; /* 字距 */
-  line-height: 1.5;    /* 行距 */
-  margin-top: 5px;     /* 元素上方的外距 */
+  line-height: 1.5; /* 行距 */
+  margin: 0; /* 移除預設的上下外距 */
 }
