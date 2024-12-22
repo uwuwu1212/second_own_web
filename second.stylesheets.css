@@ -438,6 +438,10 @@ font-weight: bold;
 
 /* 響應式設計 */
 @media (max-width: 768px) {
+.button1 {
+  width: 80%;
+  height: auto;
+  }
 input {
     width: 40%; /* 縮小按鈕大小 */
 }
@@ -449,8 +453,12 @@ input {
 }
 
 @media (max-width: 480px) {
+.button1 {
+    width: 50%;
+    height: auto;
+ }
 input {
-    width: 60%; /* 在小螢幕上縮小按鈕 */
+    width: 50%; /* 在小螢幕上縮小按鈕 */
     font-size: 1em;
 }
 
@@ -469,24 +477,29 @@ input {
   background-color: #F7E697!important;
   height: auto;
   width: auto;
-  gap: 20px;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 70px;
   padding-right: 70px;
  
 }
-.graphicdesign_title{
+.graphicdesign_title1{
+  letter-spacing: 2px; /* 字距 */
   font-weight: bold;
   text-align: center;
   color: #381908!important;
-  padding-bottom: 100px;
+  padding-bottom: 0px;
+}
+.graphicdesign_title2{
+  letter-spacing: 2px; /* 字距 */
+  font-weight: normal;
+  text-align: center;
+  color: #381908!important;
+  padding-bottom: 50px;
 }
 .card_all{
   position: relative;
-  display: flex!important;
-  justify-content: space-between!important;
-  align-items: center!important;
+  display: flex;
   padding-top: 0px;
   padding-bottom: 100px;
   padding-left: 70px;
@@ -573,13 +586,36 @@ color:#381908;
     opacity: 1;
     padding: 0; 
 }
+.card-title1{
+  letter-spacing: 2px;
+  margin-top: 5px;
+  padding-top: 15px;     /*  上方內距   */
+  padding-bottom: 1ㄢpx;  /*  下方內距   */
+  padding-left: 0px;    /*  左方內距   */
+  padding-right: 0px;   /*  右方內距   */
+}
+
+.card-text {
+  font-weight: normal; /* 設定字體為正常字重 */
+  letter-spacing: 2px; /* 字距 */
+  line-height: 1.5;    /* 行距 */
+  margin-top: 5px;     /* 元素上方的外距 */
+}
+
+
 /* 響應式設計 */
 @media (max-width: 1100px) {
   /* 針對螢幕寬度小於等於 768px 的樣式 */
+  .card_all {
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0; /* 上下各 50px 間距 */
+    line-height: 1.5; /* 控制內部文字的垂直間距 */
+  }
   
   .card1 {
-    width: 100%;
-    height: auto;
+    display: block!important;
+    width: 500px;
     padding: 0 !important;
   }
   .card2,
