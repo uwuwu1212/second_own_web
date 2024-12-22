@@ -200,8 +200,8 @@ input:checked ~ .navbarlist {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 8%;
-  height: 10%;
+  width: 111px;
+  height: 111px;
   background-color: #44B8A1;
   clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
   z-index: 1; /* 設置層級，確保在第二個三角形下方 */
@@ -211,8 +211,8 @@ input:checked ~ .navbarlist {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 8%;
-  height: 10%;
+  width: 111px;
+  height: 111px;
   background-color: #44B8A1;
   clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
   transform: translate(50%, 0); /* 偏移位置以讓它與第一個三角形有輕微錯開 */
@@ -224,8 +224,8 @@ input:checked ~ .navbarlist {
   position: absolute;
   top: 0;
   right: 0;
-  width: 8%;
-  height: 10%;
+  width: 111px;
+  height: 111px;
   background-color: #EECD2F;
   clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
   z-index: 1; /* 設置層級，確保在第二個三角形下方 */
@@ -235,8 +235,8 @@ input:checked ~ .navbarlist {
   position: absolute;
   top: 0;
   right: 0;
-  width:8%;
-  height: 10%;
+  width: 111px;
+  height: 111px;
   background-color: #EECD2F;
   clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
   transform: translate(0, 50%); /* 偏移位置以讓它與第一個三角形有輕微錯開 */
@@ -357,7 +357,7 @@ position: absolute;
 bottom: 0;
 left: 0;
 width: 8%;
-height:10%;
+height: 10%;
 background-color: #44B8A1;
 clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
 transform: translate(50%, 0px); /* 偏移位置以讓它與第一個三角形有輕微錯開 */
@@ -399,8 +399,8 @@ padding-right: 18px;   /*  右方內距   */
 .button-container2 {
 padding-top: 3%;     /*  上方內距   */
 padding-bottom: 8%;;  /*  下方內距   */
-padding-left: 18px;    /*  左方內距   */
-padding-right: 18px;   /*  右方內距   */
+padding-left: 40%;    /*  左方內距   */
+padding-right: 40%;   /*  右方內距   */
 
 display: flex;
 justify-content: center;
@@ -416,8 +416,7 @@ font: 1.5em sans-serif;
 border: 0;
 text-align: center;
 font-family: 'Noto Sans TC', sans-serif; /* 使用台北正黑體 */
-font: 1.25em sans-serif;
-width: 20%;
+width: 100%;
 height: auto;
 color: #381908;
 border: 2px solid #381908;
@@ -439,12 +438,9 @@ font-weight: bold;
 /* 響應式設計 */
 @media (max-width: 768px) {
 .button1 {
-  width: 80%;
-  height: auto;
-  }
-input {
-    width: 40%; /* 縮小按鈕大小 */
-}
+  width: 600px!important;
+ }
+
 
 .triangle_green_3, .triangle_green_4, .triangle_blue_3, .triangle_blue_4 {
     width:8%; /* 縮小三角形 */
@@ -453,14 +449,6 @@ input {
 }
 
 @media (max-width: 480px) {
-.button1 {
-    width: 50%;
-    height: auto;
- }
-input {
-    width: 50%; /* 在小螢幕上縮小按鈕 */
-    font-size: 1em;
-}
 
 .triangle_green_3, .triangle_green_4, .triangle_blue_3, .triangle_blue_4 {
     width:8%; /* 繼續縮小三角形 */
@@ -610,7 +598,9 @@ color:#381908;
   .card_all {
     text-align: center;
     margin: 0 auto;
-    padding: 50px 0; /* 上下各 50px 間距 */
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
     line-height: 1.5; /* 控制內部文字的垂直間距 */
   }
   
@@ -654,7 +644,7 @@ color:#381908;
   display: flex; /* 使用 Flexbox 布局 */
   gap: 30px; /* 設置項目之間的間距 */
   justify-content: right; /* 向右對齊 */
-  align-items: right; /* 向右對齊 */
+  align-items: center!important; /* 垂直對齊到中間 */
 }
 .contect_gmail{
   padding-top: 10px;     /*  上方內距   */
@@ -679,7 +669,7 @@ color:#381908;
     text-align: center; /* 文字置中對齊 */
   }
 
-  .logo {
+  .logo2 {
     padding-top: 50px;
     margin-bottom: 20px; /* LOGO 和其他內容的間距 */
   }
