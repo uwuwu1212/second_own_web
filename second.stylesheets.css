@@ -666,3 +666,37 @@ color:#381908;
   line-height: 1.5;    /* 行距 */
   margin-top: 5px;     /* 元素上方的外距 */
 }
+/* 響應式設計 */ 
+@media (max-width: 768px) {
+  .footer_end {
+    display: flex !important; /* 仍使用 Flexbox 方便對齊 */
+    flex-direction: column !important; /* 元素垂直排列 */
+    height: auto!important; /* 自動調整高度 */
+    width: 100%; /* 保持全寬 */
+    padding: 20px; /* 簡化內距，避免過多間距 */
+    justify-content: center; /* 子元素水平置中 */
+    align-items: center; /* 子元素垂直置中 */
+    text-align: center; /* 文字置中對齊 */
+  }
+
+  .logo {
+    padding-top: 50px;
+    margin-bottom: 20px; /* LOGO 和其他內容的間距 */
+  }
+
+  .logo_internet {
+    align-items: center; /* 垂直對齊到中間 */
+  }
+
+  .logo_internet2 {
+    justify-content: center!important; /* 向中對齊 */
+    align-items: center!important; /* 垂直對齊到中間 */
+  }
+
+  .contect_gmail {
+    align-items: center; /* 垂直對齊到中間 */
+    padding-bottom: 50px;
+    margin-top: 10px; /* 聯絡資訊與圖標之間的間距 */
+    text-align: center; /* 文字置中對齊 */
+  }
+}
